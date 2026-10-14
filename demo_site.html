@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NUTM - Home (demo of embedded chatbot)</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#383838}
+    nav{display:flex;align-items:center;gap:24px;padding:14px 28px;border-bottom:1px solid #ddd}
+    .logo{background:#009f5d;color:#fff;font-weight:bold;padding:8px 12px;border-radius:4px}
+    nav a{color:#383838;text-decoration:none;font-size:14px}
+    .hero{background:#009f5d;color:#fff;padding:80px 28px;text-align:center}
+    .hero h1{margin:0 0 10px;font-size:36px}
+    .cards{display:flex;gap:20px;flex-wrap:wrap;padding:40px 28px}
+    .card{flex:1;min-width:220px;border:1px solid #ddd;border-radius:8px;padding:20px}
+    .note{background:#fff8e1;padding:12px 28px;font-size:13px;border-bottom:1px solid #eee}
+  </style>
+</head>
+<body>
+  <div class="note">Mock page for the project presentation - this is not the real nutm.edu.ng site. The chat bubble in the corner is added by one script line.</div>
+  <nav><img src="/nutm_logo.png" alt="NUTM" style="height:44px"><a href="#">About</a><a href="#">Academics</a><a href="#">Alumni</a><a href="#">FAQ</a><a href="#">Contact</a></nav>
+  <section class="hero">
+    <h1>Nigerian University of Technology and Management</h1>
+    <p>Transforming Africa and the World through technology and entrepreneurship education.</p>
+  </section>
+  <section class="cards">
+    <div class="card"><h3>Undergraduate Programs</h3><p>Build a strong foundation in leadership, innovation and problem-solving.</p></div>
+    <div class="card"><h3>Postgraduate Programs</h3><p>MBA, MSc Software Engineering and MSc Data Science.</p></div>
+    <div class="card"><h3>Executive Education</h3><p>Short, high-impact programmes for professionals.</p></div>
+  </section>
+
+  <!-- THE ONLY LINE NUTM WOULD NEED TO ADD -->
+  <script src="/widget.js"></script>
+</body>
+</html>
