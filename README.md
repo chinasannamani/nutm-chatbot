@@ -1,4 +1,4 @@
-# NUTM Assistant
+# NUTM Chatbot
 
 A question-answering chatbot for the **Nigerian University of Technology and Management (NUTM)**. It answers questions about undergraduate and postgraduate programmes, tuition fees, entry requirements, admission steps and contact details, and it can be embedded on any website with a single line of code.
 
