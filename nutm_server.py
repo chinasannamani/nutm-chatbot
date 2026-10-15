@@ -1,17 +1,5 @@
-"""
-NUTM chatbot - local web server (standard library only, no pip install needed).
-
-Run:   python nutm_server.py
-Then open:
-    http://localhost:8000/        -> full-page chatbot
-    http://localhost:8000/demo    -> mock NUTM website with the chat widget embedded
-
-Keep these files in the same folder:
-    nutm_chatbot.py, nutm_knowledge_base.txt, nutm_server.py,
-    chat.html, demo_site.html, widget.js, nutm_logo.png, nutm_icon.png
-"""
-
 import json
+import os
 import sys
 import threading
 import webbrowser
@@ -21,7 +9,10 @@ from pathlib import Path
 import nutm_chatbot as bot
 
 HERE = Path(__file__).parent
-HOST, PORT = "127.0.0.1", 8000
+
+# Render provides a PORT environment variable; bind to 0.0.0.0 so external traffic can reach it
+HOST = "0.0.0.0"
+PORT = int(os.environ.get("PORT", 8000))
 
 PAGES = {
     "/": ("chat.html", "text/html; charset=utf-8"),
@@ -77,10 +68,7 @@ class Handler(BaseHTTPRequestHandler):
 
 def main():
     server = ThreadingHTTPServer((HOST, PORT), Handler)
-    url = f"http://localhost:{PORT}/"
-    print(f"NUTM chatbot running at {url}  (demo page: {url}demo)")
-    print("Press Ctrl+C to stop.")
-    threading.Timer(1.0, lambda: webbrowser.open(url)).start()
+    print(f"NUTM chatbot running on port {PORT}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
