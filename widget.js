@@ -2,19 +2,35 @@
  * NUTM Assistant - embeddable chat widget.
  *
  * To add it to any web page, paste ONE line before </body>:
- *   <script src="https://YOUR-CHATBOT-URL/widget.js"></script>
+ *   <script src="https://nutm-chatbot.onrender.com/widget.js"></script>
  * Add data-open="true" to start with the chat window open.
- * The widget sends questions to YOUR-CHATBOT-URL/chat (the same server that serves this file).
+ * The widget sends questions to nutm-chatbot.onrender.com/chat (the same server that serves this file).
  *
  * Buttons in the chat header:
  *   "–"  minimize: shrinks the chat to just its title bar (click the bar to expand again)
  *   "×"  close: hides the chat and brings back the round NUTM bubble (conversation is kept)
  */
 (function () {
-  var script = document.currentScript;
+  var script = document.currentScript || document.querySelector('script[src*="widget.js"]');
+  if (!script) { return; }
   var API = new URL("/chat", script.src).href;
   var ICON = new URL("/nutm_icon.png", script.src).href;
   var startOpen = script.getAttribute("data-open") === "true";
+
+  // The conversation is kept in this browser tab's session storage, so a refresh or a visit to
+  // another page of the site continues the same chat (it is cleared when the tab is closed).
+  var KEY = "nutm-bot-chat-v1";
+  var saved = { msgs: [], context: null, open: false, min: false };
+  try {
+    var stored = JSON.parse(window.sessionStorage.getItem(KEY) || "null");
+    if (stored && Array.isArray(stored.msgs)) { saved = stored; }
+  } catch (e) {}
+  function save() { try { window.sessionStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {} }
+  function remember(who, text) {
+    saved.msgs.push({ w: who, t: String(text).slice(0, 4000) });
+    if (saved.msgs.length > 40) { saved.msgs.shift(); }
+    save();
+  }
 
   var css = `
   #nutm-bot *{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
@@ -53,15 +69,16 @@
   var root = document.createElement("div");
   root.id = "nutm-bot";
   root.innerHTML =
-    '<div id="nutm-bot-panel">' +
+    '<div id="nutm-bot-panel" role="dialog" aria-label="NUTM Assistant chat">' +
     '<div id="nutm-bot-head"><img src="' + ICON + '" alt="NUTM logo">' +
     '<div id="nutm-bot-title">NUTM Assistant<small>Programmes, fees and admission</small></div>' +
+    '<button class="nb-ctl" id="nutm-bot-new" title="Start a new chat" aria-label="Start a new chat">&#8635;</button>' +
     '<button class="nb-ctl" id="nutm-bot-min" title="Minimize" aria-label="Minimize chat">&#8211;</button>' +
     '<button class="nb-ctl" id="nutm-bot-close" title="Close" aria-label="Close chat">&#215;</button></div>' +
-    '<div id="nutm-bot-msgs"></div>' +
-    '<div id="nutm-bot-form"><input id="nutm-bot-input" placeholder="Type your question..." autocomplete="off">' +
-    '<button id="nutm-bot-send">Send</button></div></div>' +
-    '<button id="nutm-bot-btn" title="Chat with NUTM Assistant"><img src="' + ICON + '" alt="NUTM"></button>';
+    '<div id="nutm-bot-msgs" role="log" aria-live="polite" aria-label="Chat messages"></div>' +
+    '<div id="nutm-bot-form"><input id="nutm-bot-input" aria-label="Type your question" maxlength="200" placeholder="Type your question..." autocomplete="off">' +
+    '<button id="nutm-bot-send" aria-label="Send question">Send</button></div></div>' +
+    '<button id="nutm-bot-btn" title="Chat with NUTM Assistant" aria-label="Open NUTM Assistant chat"><img src="' + ICON + '" alt="NUTM"></button>';
   document.body.appendChild(root);
 
   var panel = root.querySelector("#nutm-bot-panel");
@@ -70,12 +87,13 @@
   var input = root.querySelector("#nutm-bot-input");
   var minBtn = root.querySelector("#nutm-bot-min");
 
-  function add(text, who) {
+  function add(text, who, skipSave) {
     var d = document.createElement("div");
     d.className = "nb-msg " + (who === "user" ? "nb-user" : "nb-bot");
     d.textContent = text; // textContent keeps it safe from HTML injection
     msgs.appendChild(d);
     msgs.scrollTop = msgs.scrollHeight;
+    if (!skipSave) { remember(who, text); }
     return d;
   }
 
@@ -84,14 +102,21 @@
     if (!text) return;
     input.value = "";
     add(text, "user");
-    var thinking = add("...", "bot");
+    var thinking = add("...", "bot", true);
     fetch(API, {
       method: "POST",
+      credentials: "omit",
+      referrerPolicy: "no-referrer",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text }),
+      body: JSON.stringify({ message: text, context: saved.context }),
     })
       .then(function (r) { return r.json(); })
-      .then(function (data) { thinking.textContent = data.reply; msgs.scrollTop = msgs.scrollHeight; })
+      .then(function (data) {
+        thinking.textContent = data.reply;
+        msgs.scrollTop = msgs.scrollHeight;
+        if (data.context) { saved.context = data.context; }
+        remember("bot", data.reply);
+      })
       .catch(function () {
         thinking.textContent = "Sorry, I cannot reach the chatbot server right now.";
       });
@@ -104,16 +129,19 @@
     minBtn.innerHTML = "&#8211;";
     input.focus();
     msgs.scrollTop = msgs.scrollHeight;
+    saved.open = true; saved.min = false; save();
   }
   function closeChat() {
     panel.classList.remove("open", "min");
     bubble.style.display = "block";
+    saved.open = false; saved.min = false; save();
   }
   function setMinimized(min) {
     panel.classList.toggle("min", min);
     minBtn.innerHTML = min ? "&#9633;" : "&#8211;";
     minBtn.title = min ? "Expand" : "Minimize";
     if (!min) { input.focus(); msgs.scrollTop = msgs.scrollHeight; }
+    saved.min = !!min; save();
   }
 
   bubble.onclick = openChat;
@@ -124,8 +152,20 @@
     if (panel.classList.contains("min")) setMinimized(false);
   };
   root.querySelector("#nutm-bot-send").onclick = send;
+  root.querySelector("#nutm-bot-new").onclick = function (e) {
+    e.stopPropagation();
+    saved.msgs = []; saved.context = null; save();
+    msgs.innerHTML = "";
+    add(GREETING, "bot", true);
+    input.focus();
+  };
   input.addEventListener("keydown", function (e) { if (e.key === "Enter") send(); });
+  panel.addEventListener("keydown", function (e) { if (e.key === "Escape") closeChat(); });
 
-  add("Hello! I'm the NUTM Assistant. Ask me about programmes, fees, admission or contacts.", "bot");
-  if (startOpen) openChat();
+  var GREETING = "Hello! I'm the NUTM Assistant. Ask me about programmes, fees, admission or contacts.";
+  add(GREETING, "bot", true);
+  saved.msgs.forEach(function (m) { add(m.t, m.w === "user" ? "user" : "bot", true); });
+  var wasMinimized = saved.min;
+  if (startOpen || saved.open) { openChat(); }
+  if (wasMinimized) { setMinimized(true); }
 })();

@@ -1,4 +1,4 @@
-# NUTM KNOWLEDGE BASE
+# NUTM KNOWLEDGE BASE  (last updated 15 October 2026)
 # Sources: nutm.edu.ng pages (home, about-us, academics, undergraduate, postgraduate, MSc Data Science,
 # MSc Software Engineering, MBA, executive education, career) scraped 13 October 2026;
 # NUTM Undergraduate FAQ; MSc Data Science, MSc Software Engineering and 2026 MBA brochures.
@@ -26,7 +26,7 @@ keywords: edge, features, benefits, why choose nutm, tedlab, shadow a leader, me
 The NUTM Edge includes: Global Faculty (lectures and workshops by leading faculty from Africa and beyond); Career Development (a Career Center with placement support and a workplace-ready toolkit); TEDLab (an entrepreneurship capstone project to build a venture from scratch); Shadow a Leader (a six-week internship, full-time or part-time, shadowing a senior leader and working on a company project); Industry Mentorship (guest lectures, workshops and individual mentorship by eminent leaders and entrepreneurs); and Immersion Programs (exposure to international business, digitization and culture).
 
 ### NUTM accreditation and approval
-keywords: accredited, nuc, national universities commission, approved, fec, federal executive council, recognized, legitimate
+keywords: accredited, nuc, national universities commission, approved, fec, federal executive council, recognized, legitimate, approved by the government, government approval, recognised by government, is nutm legit, is nutm a real university, is it a registered university, licensed, is the university approved
 NUTM has approval from the Federal Executive Council (FEC) to operate as a university in Nigeria and is accredited by the National Universities Commission (NUC) to offer full bachelor's degree programmes. NUTM offers its postgraduate master's programmes (MBA, Software Engineering, Data Science) with FEC approval and NUC accreditation. NUTM is also profiled on the JAMB portal and at JAMB-accredited CBT centres.
 
 ### NUTM contact details, address and location
@@ -62,7 +62,7 @@ Postgraduate admission has four stages: (1) Online application - complete the on
 
 ### Postgraduate FAQ: Do I need GMAT or GRE?
 keywords: gmat, gre, test, entrance exam, waiver, admission test
-No. NUTM conducts its own admissions assessment test, which applicants complete. Applicants who do not have a GMAT or GRE score take the NUTM Admissions Assessment Test. Applicants with a valid GMAT/GRE score are eligible for a waiver from the online assessment. (The MBA brochure also advises that if you think your qualifications exempt you, you should consult the admissions team.)
+No. NUTM conducts its own admissions assessment test, which applicants complete. Applicants who do not have a GMAT or GRE score take the NUTM Admissions Assessment Test. Applicants with a valid GMAT/GRE score are eligible for a waiver from the online assessment. If you think your qualifications exempt you, ask the admissions team.
 
 ### Postgraduate FAQ: Are part-time students required to attend campus? Immersive weeks
 keywords: immersive week, attend campus, part-time, on campus, compulsory, mandatory, visit lagos
@@ -82,7 +82,7 @@ NUTM offers comprehensive career support through its Career Center: career coach
 
 ### Postgraduate: faculty
 keywords: lecturers, teachers, professors, who teaches, faculty members, instructors
-Faculty come from world-class institutions and local industry. Examples listed in the brochures: Dwight Jaggard (Professor, University of Pennsylvania; PhD Caltech); Soumitra Dutta (Dean, Said Business School, Oxford); Wole Soboyejo (PhD Cambridge; former Provost WPI); Emmanuel Agu (Professor of Computer Science, WPI); Piyush Kumar (Associate Professor of Marketing, University of Georgia); Vera Tilson (Associate Professor of Operations, University of Rochester); Maurizio Caio (Founder, TLcom Capital; MBA Stanford); Ayo Teriba (CEO, Economic Associates; Lagos Business School); Efosa Ojomo (Clayton Christensen Institute; MBA Harvard); John Burrows (University of Chicago Harris School; Said Business School Oxford); Chipo Dendere (Wellesley College). Adjunct faculty include Lame Verre, Dr. Tunji Olaopa, Itika Gupta, Bernard O'Bien, Ola Ogunneye, Joseph Thomas, Amit Kumar and Preeti Singh. MBA and Software Engineering brochures also list Nigerian academics such as Dr. Abraham Ehiorobo, Dr. Ageebee Silas Faki, Dr. Alabi Olubunmi F, Dr. Ebes Esho, Dr. Adedugba Adebayo and Dr. Olumide Adesina. The full list is at nutm.edu.ng/faculty-staff.
+Faculty come from world-class institutions and local industry. Examples: Dwight Jaggard (Professor, University of Pennsylvania; PhD Caltech); Soumitra Dutta (Dean, Said Business School, Oxford); Wole Soboyejo (PhD Cambridge; former Provost WPI); Emmanuel Agu (Professor of Computer Science, WPI); Piyush Kumar (Associate Professor of Marketing, University of Georgia); Vera Tilson (Associate Professor of Operations, University of Rochester); Maurizio Caio (Founder, TLcom Capital; MBA Stanford); Ayo Teriba (CEO, Economic Associates; Lagos Business School); Efosa Ojomo (Clayton Christensen Institute; MBA Harvard); John Burrows (University of Chicago Harris School; Said Business School Oxford); Chipo Dendere (Wellesley College). Adjunct faculty include Lame Verre, Dr. Tunji Olaopa, Itika Gupta, Bernard O'Bien, Ola Ogunneye, Joseph Thomas, Amit Kumar and Preeti Singh. Nigerian faculty include Dr. Abraham Ehiorobo, Dr. Ageebee Silas Faki, Dr. Alabi Olubunmi F, Dr. Ebes Esho, Dr. Adedugba Adebayo and Dr. Olumide Adesina. The full list is at nutm.edu.ng/faculty-staff.
 
 
 ### MSc Data Science: overview
@@ -91,18 +91,18 @@ The NUTM MSc in Data Science, "Become a Data-Driven Leader", equips professional
 
 ### MSc Data Science: duration, schedule and format
 keywords: data science, duration, how long, length, schedule, timetable, class days, full-time, part-time, online, on-campus, semesters, format, months
-Full-Time MSc Data Science: 18 months, 3 semesters, on-campus, Monday to Friday classes. Part-Time MSc Data Science: 24 months, 4 semesters, hybrid - online classes on Fridays (1 PM - 6 PM WAT) and Saturdays (9 AM - 6 PM WAT), plus one on-campus Immersive Week per semester at the NUTM Lagos campus (Monday to Friday). Immersive week highlights: workshops and masterclasses with industry experts, AI and Data Science capstone projects, hands-on Machine Learning and Big Data sessions. Note: the postgraduate listing page describes the Data Science programme as online, while the programme page and brochure describe full-time as on-campus and part-time as online with immersive weeks.
+Full-Time MSc Data Science: 18 months, 3 semesters, on-campus, Monday to Friday classes. Part-Time MSc Data Science: 24 months, 4 semesters, hybrid - online classes on Fridays (1 PM - 6 PM WAT) and Saturdays (9 AM - 6 PM WAT), plus one on-campus Immersive Week per semester at the NUTM Lagos campus (Monday to Friday). Immersive week highlights: workshops and masterclasses with industry experts, AI and Data Science capstone projects, hands-on Machine Learning and Big Data sessions.
 
 ### MSc Data Science: tuition fees
 keywords: data science, fee, fees, cost, tuition, price, how much, naira, payment, pay, instalment, discount, scholarship
-MSc Data Science tuition is N5,000,000 for both full-time and part-time, payable over 3 semesters (full-time) or 4 semesters (part-time). The brochure says this is offered at a 50% discount to the actual programme cost of N10,000,000. Payment schedules and financing options are discussed during the admission process. There is no application fee.
+MSc Data Science tuition is N5,000,000 for both full-time and part-time, payable over 3 semesters (full-time) or 4 semesters (part-time). NUTM offers this at a 50% discount to the actual programme cost of N10,000,000. Payment schedules and financing options are discussed during the admission process. There is no application fee.
 
 ### MSc Data Science: eligibility and entry requirements
-keywords: data science, eligibility, requirements, who can apply, qualification, degree needed, entry, background, non-technical, any field
+keywords: data science, eligibility, requirements, who can apply, qualification, degree needed, entry, background, non-technical, any field, what do i need to study, what do i need to apply, who is eligible, admission requirements, need a computer science degree
 A recognized bachelor's degree in any field is required for the MSc Data Science. You do not need a computer science background.
 
 ### MSc Data Science: curriculum and courses
-keywords: data science, curriculum, courses, modules, subjects, syllabus, credits, what will i learn, electives, capstone, python, machine learning
+keywords: data science, curriculum, courses, modules, subjects, syllabus, credits, what will i learn, electives, capstone, python, machine learning, what courses are in, course list, what is taught
 MSc Data Science curriculum:
 Core Courses (12 credits): Introduction to Data Science; Mathematical Foundations for Data Science; Machine Learning Fundamentals; Data Exploration and Visualization.
 Tech Courses (18 credits): Big Data Technologies; Statistical Analysis; Data Ethics and Privacy; Natural Language Processing; AI in Data Science; Cybersecurity in Data Science.
@@ -116,11 +116,11 @@ MSc Data Science admission: (1) online application (no application fee); (2) onl
 
 ### MSc Data Science: start date, intake and deadlines
 keywords: data science, start date, intake, when, begin, commence, deadline, 2026, 2025, applications open, calendar, end date
-According to the website (scraped October 2026), the MSc Data Science start date is September 2026 and the page invites applications for the 2026 intake, stating applications for the 2026 intake open in March 2026 and that admissions are conducted in rounds, so early applications are encouraged. The brochure (2025 cohort) gave: Full-Time start 13 October 2025, end 8 May 2027; Part-Time start 13 October 2025, end 20 November 2027. For current intake dates and deadlines, confirm with pg.admissions@nutm.edu.ng.
+The most recent intake listed on NUTM's website starts in September 2026 (applications opened in March 2026; admissions are run in rounds, so early applications are encouraged). The previous cohort began on 13 October 2025: full-time ends 8 May 2027 and part-time ends 20 November 2027. NOTE: as of 15 October 2026 the September 2026 start date has already passed, so the intake may be under way or the dates may have changed; always confirm with admissions (pg.admissions@nutm.edu.ng).
 
 ### MSc Data Science: alumni outcomes
-keywords: data science, alumni, graduates, employment, jobs, salary, career outcomes, success
-NUTM alumni outcomes quoted in the brochures: 55% of graduates are top intrapreneurs and operators in top African corporates; 604% average increase from previous salaries before joining NUTM; 100% alumni employment within the first 3 months of completing the programme; 45% of alumni are pursuing entrepreneurial ambitions; alumni-founded startups have raised over $3m in venture funding; 38 startups created or scaled at NUTM; 700+ jobs created from 32 startups. These are NUTM's own marketing figures from its brochures.
+keywords: data science, alumni, graduates, employment, jobs, salary, career outcomes, success, do graduates get jobs, graduate employment, job placement, employability
+NUTM-reported alumni outcomes: 55% of graduates are top intrapreneurs and operators in top African corporates; 604% average increase from previous salaries before joining NUTM; 100% alumni employment within the first 3 months of completing the programme; 45% of alumni are pursuing entrepreneurial ambitions; alumni-founded startups have raised over $3m in venture funding; 38 startups created or scaled at NUTM; 700+ jobs created from 32 startups. These are NUTM's own reported figures.
 
 
 ### MSc Software Engineering: overview
@@ -133,14 +133,14 @@ Full-Time MSc Software Engineering: 18 months, 3 semesters, on-campus, Monday to
 
 ### MSc Software Engineering: tuition fees
 keywords: software engineering, fee, fees, cost, tuition, price, how much, naira, payment, pay, instalment, discount
-MSc Software Engineering tuition is N5,000,000 for both full-time and part-time, payable over 3 semesters (full-time) or 4 semesters (part-time). The brochure says this is a 50% discount to the actual programme cost of N10,000,000. Payment schedules and financing options are discussed during the admission process. There is no application fee.
+MSc Software Engineering tuition is N5,000,000 for both full-time and part-time, payable over 3 semesters (full-time) or 4 semesters (part-time). NUTM offers this at a 50% discount to the actual programme cost of N10,000,000. Payment schedules and financing options are discussed during the admission process. There is no application fee.
 
 ### MSc Software Engineering: eligibility and entry requirements
-keywords: software engineering, eligibility, requirements, who can apply, qualification, degree needed, entry, background
-The website states the requirement as a recognized bachelor's degree in Computer Science or IT. The brochure states a recognized bachelor's degree in computer science, software engineering or a related field.
+keywords: software engineering, eligibility, requirements, who can apply, qualification, degree needed, entry, background, what do i need to study, what do i need to apply, who is eligible, admission requirements
+A recognized bachelor's degree in computer science, software engineering, information technology or a related field. If your degree is in a different subject, ask pg.admissions@nutm.edu.ng whether you qualify.
 
 ### MSc Software Engineering: curriculum and courses
-keywords: software engineering, curriculum, courses, modules, subjects, syllabus, credits, what will i learn, electives, capstone
+keywords: software engineering, curriculum, courses, modules, subjects, syllabus, credits, what will i learn, electives, capstone, what courses are in, course list, what is taught
 MSc Software Engineering curriculum:
 Core Courses (12 credits): Software Engineering Principles and Practices; Algorithms and Data Structures; Software Verification and Validation; Object-Oriented Software Design.
 Tech Courses (18 credits): Software Testing and Quality Assurance; Database Systems and Management; Web Application Development; Mobile Application Development; Software Security and Privacy; Software Project Management; Human-Computer Interaction; Big Data Analytics.
@@ -154,7 +154,7 @@ MSc Software Engineering admission: (1) online application (no application fee);
 
 ### MSc Software Engineering: start date and intake
 keywords: software engineering, start date, intake, when, begin, commence, deadline, 2026, applications open
-According to the website (scraped October 2026), the MSc Software Engineering start date is September 2026 and the page invites applications for the 2026 intake, stating applications opened in February 2026 and that admissions are conducted in rounds. Confirm current dates with pg.admissions@nutm.edu.ng.
+The most recent intake listed on NUTM's website starts in September 2026 (applications opened in February 2026; admissions are run in rounds, so early applications are encouraged). NOTE: as of 15 October 2026 the September 2026 start date has already passed, so the intake may be under way or the dates may have changed; always confirm with admissions (pg.admissions@nutm.edu.ng).
 
 
 ### MBA: overview
@@ -170,12 +170,12 @@ keywords: mba, fee, fees, cost, tuition, price, how much, naira, payment, pay, i
 MBA tuition is N8,000,000 for both full-time and part-time, payable over 3 semesters (full-time) or 4 semesters (part-time). Payment schedules and financing options are discussed during the admission process. There is no application fee.
 
 ### MBA: eligibility and entry requirements
-keywords: mba, eligibility, requirements, who can apply, qualification, degree needed, entry, english
+keywords: mba, eligibility, requirements, who can apply, qualification, degree needed, entry, english, who can apply, who is eligible, who qualifies, admission requirements, what do i need to apply
 A recognized bachelor's degree in any field from an accredited institution, plus demonstrated English language proficiency. Applicants are evaluated through the four-stage admissions process and admission is offered based on performance across the stages.
 
 ### MBA: curriculum and courses
-keywords: mba, curriculum, courses, modules, subjects, syllabus, what will i learn, capstone, semester
-MBA curriculum on the website (by semester): Semester 1 - Introduction to General Management, Managerial Economics, Introduction to Accounting, Art of Communication, Personal Mastery, Corporate Strategy (Immersive Week). Semester 2 - Intro to Computing and Programming, Marketing Management, Operations Management, Environment of Business, Decision Making & Negotiations, Corporate Finance (Immersive Week). Summer - Shadow a Leader / internship (full-time only). Semester 3 - Research Methodology, Quantitative Methods for Management, Entrepreneurship, AI & Machine Learning, Market Creating Innovation Bootcamp (Immersive Week). Semester 4 - Business Law, Human Resource Management, Data Analytics, Graduate Seminar, Organizational Behavior (Immersive Week). The brochure lists a slightly different course arrangement and an Entrepreneurship Capstone Project (with Shadow a Leader and the capstone applicable to full-time MBA students only).
+keywords: mba, curriculum, courses, modules, subjects, syllabus, what will i learn, capstone, semester, what courses are in, course list, what is taught
+MBA curriculum on the website (by semester): Semester 1 - Introduction to General Management, Managerial Economics, Introduction to Accounting, Art of Communication, Personal Mastery, Corporate Strategy (Immersive Week). Semester 2 - Intro to Computing and Programming, Marketing Management, Operations Management, Environment of Business, Decision Making & Negotiations, Corporate Finance (Immersive Week). Summer - Shadow a Leader / internship (full-time only). Semester 3 - Research Methodology, Quantitative Methods for Management, Entrepreneurship, AI & Machine Learning, Market Creating Innovation Bootcamp (Immersive Week). Semester 4 - Business Law, Human Resource Management, Data Analytics, Graduate Seminar, Organizational Behavior (Immersive Week). The MBA also includes an Entrepreneurship Capstone Project; the capstone and Shadow a Leader are for full-time MBA students only.
 
 ### MBA: admission steps
 keywords: mba, apply, application, admission, interview, assessment, how to apply, gmat
@@ -183,11 +183,11 @@ MBA admission: (1) online application (no application fee); (2) online assessmen
 
 ### MBA: start date and intake
 keywords: mba, start date, intake, when, begin, commence, deadline, 2026, applications open
-According to the website (scraped October 2026), the MBA start date is September 2026 and the page invites applications for the 2026 intake, stating applications opened in February 2026 and that admissions are conducted in rounds. Confirm current dates with mba@nutm.edu.ng.
+The most recent intake listed on NUTM's website starts in September 2026 (applications opened in February 2026; admissions are run in rounds, so early applications are encouraged). NOTE: as of 15 October 2026 the September 2026 start date has already passed, so the intake may be under way or the dates may have changed; always confirm with admissions (mba@nutm.edu.ng).
 
 
 ### Undergraduate programmes: list of B.Sc. degrees
-keywords: undergraduate, bachelor, b.sc, degree programs, courses, what can i study, ug, first degree, available undergraduate degree programs
+keywords: undergraduate, bachelor, b.sc, degree programs, courses, what can i study, ug, first degree, available undergraduate degree programs, what undergraduate programmes are offered, undergraduate degrees available, bsc courses offered
 NUTM undergraduate degrees (Faculty of Computing & Science and business programmes): B.Sc. Computer Science, B.Sc. Cybersecurity, B.Sc. Information Technology, B.Sc. Accounting, B.Sc. Business Administration, B.Sc. Entrepreneurship, B.Sc. Economics. Apply for the 2026 intake via the NUTM website (nutm.edu.ng/undergrad).
 
 ### B.Sc. Computer Science
@@ -227,7 +227,7 @@ keywords: nuc, accredited, jamb portal, jamb cbt, profiled, recognised
 Yes, NUTM is accredited by the National Universities Commission (NUC). Yes, NUTM is profiled on the JAMB portal and at JAMB-accredited CBT centres.
 
 ### Undergraduate FAQ: Entry requirements for undergraduate programmes
-keywords: undergraduate, entry requirements, requirements, utme, jamb score, o level, credits, waec, neco, cut off, cutoff, 180, physics, mathematics, english
+keywords: undergraduate, entry requirements, requirements, utme, jamb score, o level, credits, waec, neco, cut off, cutoff, 180, physics, mathematics, english, minimum jamb score, jamb cut off, jamb cutoff, how many points, utme score, what score do i need, required subjects
 Applicants should have scored 180 and above in UTME (conducted by JAMB) and completed secondary education with a minimum of five (5) O'Level or equivalent credits in English, Mathematics and Physics, in one sitting.
 
 ### Undergraduate FAQ: Can I apply if I already have a Master's or doctoral degree?
@@ -329,16 +329,16 @@ keywords: partners, partnerships, collaborations, sponsors, universities, compan
 NUTM has partnerships for student exchange, internship and mentorship. Academic partners include University of Oxford, UC Berkeley, Stanford, MIT, University of Pennsylvania, Ashesi, IIT Madras and Worcester Polytechnic Institute (WPI). Corporate partners include Mastercard Foundation, McKinsey & Company, the NBA, First E&P, Jim Ovia Foundation, Aradel, Shell, PwC, UAC, FHN, Century Group, Gamp, Newcross, Somotex, Landmark, Cornerstone, Custodian, MTN, eTranzact, Pan Ocean, AfriGlobal Medicare, John P. McNulty Foundation, Catalyst Fund and African Capital Alliance Foundation, among others. The 2024 'Shadow-A-Leader' partners included Microsoft, Nexford University, VFD Group, RED, CAP plc, DrugStoc, First E&P, Terragon, Verraki, Futures FT, Open Access Data Centres, HealthCap, Ventures Platform, Caverton and Norrsken22.
 
 ### NUTM alumni impact and testimonials
-keywords: alumni, graduates, success stories, testimonials, employment rate, salary increase, startups, where do graduates work, deloitte, mystash, gamp
-Brochure figures: 55% of graduates are top intrapreneurs and operators in top African corporates; 604% average increase from previous salaries; 100% alumni employment within 3 months of completing the programme; 45% pursuing entrepreneurship; over $3m raised in venture funding; 38 startups created or scaled; 700+ jobs created. Alumni work at organisations such as Paystack, EY, Deloitte, First E&P, Nigeria LNG, Future Africa, Okra, Mono, Spleet and Landmark. Some alumni continue to Wharton, Edinburgh, Carnegie Mellon, Houston, Columbia, Auburn, Esade, American University of Beirut, Bath and Cranfield. Testimonials on the site come from Belema West (Industry Strategist, Deloitte), Emmanuel Nwachukwu (Project Engineer, Nigeria LNG), Tiana Okere (Founder, MyStash) and Bolu Omotayo (Founder, Gamp).
+keywords: alumni, graduates, success stories, testimonials, employment rate, salary increase, startups, where do graduates work, deloitte, mystash, gamp, do graduates get jobs, graduate employment, employment rate, job placement, employability, after graduation
+NUTM-reported figures: 55% of graduates are top intrapreneurs and operators in top African corporates; 604% average increase from previous salaries; 100% alumni employment within 3 months of completing the programme; 45% pursuing entrepreneurship; over $3m raised in venture funding; 38 startups created or scaled; 700+ jobs created. Alumni work at organisations such as Paystack, EY, Deloitte, First E&P, Nigeria LNG, Future Africa, Okra, Mono, Spleet and Landmark. Some alumni continue to Wharton, Edinburgh, Carnegie Mellon, Houston, Columbia, Auburn, Esade, American University of Beirut, Bath and Cranfield. Testimonials on the site come from Belema West (Industry Strategist, Deloitte), Emmanuel Nwachukwu (Project Engineer, Nigeria LNG), Tiana Okere (Founder, MyStash) and Bolu Omotayo (Founder, Gamp).
 
-### Careers and jobs at NUTM
-keywords: careers, jobs at nutm, work with us, vacancy, vacancies, hiring, employment at nutm, join the team, staff recruitment
-NUTM invites people to explore career opportunities at the university. At the time the website was scraped (October 2026), there were no job listings at the moment. See nutm.edu.ng/career for updates.
+### Working at NUTM: staff job vacancies
+keywords: work at nutm, staff vacancies, hiring staff, staff recruitment, apply for a job at nutm, join the nutm team, lecturer vacancy
+This is about jobs AT NUTM (staff positions). NUTM invites people to explore career opportunities at the university; as of October 2026 no vacancies were listed. See nutm.edu.ng/career for updates. For what graduates do after studying at NUTM, see the alumni outcomes entries.
 
 ### News and events
 keywords: news, events, announcements, latest, upcoming
-The NUTM website has a Latest News page (nutm.edu.ng/news-events). At the time it was scraped there were no upcoming news or events posted.
+The NUTM website has a Latest News page (nutm.edu.ng/news-events). As of October 2026 no upcoming news or events were posted.
 
 ### NUTM social media
 keywords: social media, twitter, x, linkedin, facebook, instagram, youtube, follow, newsletter
@@ -347,3 +347,28 @@ NUTM is on social media as @nutmng: X (x.com/nutmng), LinkedIn (linkedin.com/sch
 ### Life on the Lagos campus for postgraduate students
 keywords: campus life, facilities, environment, full-time experience, residential
 The NUTM Lagos campus in Apapa is designed to foster innovation, leadership and entrepreneurship, giving full-time students an immersive in-person environment with daily engagement with faculty, peers and industry leaders. The campus is in Apapa, Lagos, with access to major technology, business and entertainment hubs. The MBA is non-residential; part-time students visit campus once per semester for an Immersive Week.
+
+
+### Can I pay my fees in instalments? (all programmes)
+keywords: instalment, installment, pay in parts, payment plan, pay by semester, spread payment, payment schedule, financing, can i pay in installments, how to pay fees
+Undergraduate: yes. Tuition and accommodation can be paid in instalments up to the specified due date, annually or per semester; the non-refundable N250,000 acceptance fee is due when you accept an offer. Postgraduate (MBA, MSc Software Engineering, MSc Data Science): the website says fees are payable over 3 semesters (full-time) or 4 semesters (part-time), and that payment schedules and financing options are discussed during the admission process. Ask admissions: pg.admissions@nutm.edu.ng (MSc) or mba@nutm.edu.ng (MBA).
+
+### What is TEDLab at NUTM?
+keywords: tedlab, ted lab, what is tedlab, tedlab meaning, tedlab stands for, entrepreneurship capstone, build a venture, venture from scratch, ted framework, technology entrepreneurship design, nutm edge
+TEDLab is NUTM's entrepreneurship capstone project in which students build a venture from scratch, as described on the NUTM website. It is one of the six features of "The NUTM Edge", alongside Global Faculty, Career Development, Shadow a Leader, Industry Mentorship and Immersion Programs. NUTM describes its academic model as Technology, Entrepreneurship and Design (TED), an interdisciplinary approach that blends STEM learning with management, design thinking and hands-on projects with African companies. TEDLab is both a capstone-style project and, in the MSc brochures, a course: "Product Management - TEDLab" appears in the Business Management courses (ask "is TEDLab a course" for details).
+
+### TEDLab in the NUTM programmes (course and capstone)
+keywords: product management, capstone, entrepreneurship capstone project, is it a course, credits, msc, mba, data science, software engineering, market creating innovation bootcamp
+NUTM lists "Product Management - TEDLab" as a course in the Business Management group (10 credits in total) of both the MSc Data Science and the MSc Software Engineering curricula, alongside Foundations of Leadership, Strategy, Design Thinking and Marketing Management. Both MSc programmes also include a 6-credit Project/Research (Research/Capstone). The MBA includes an entrepreneurship capstone project (for full-time MBA students, together with Shadow a Leader) and a Market Creating Innovation Bootcamp during an Immersive Week. Confirm current details with admissions.
+
+### TEDLab results, ventures and funding
+keywords: results, outcomes, ventures, startups, funding raised, startups created, success, nsp ventures, how many startups, nutm startups, jobs created
+Early NUTM Scholars Program announcements carried by third-party news sites (2022-2023) reported that five ventures created through TEDLab had launched products and together raised about $225,000 in less than a year. NUTM reports wider alumni figures: 38 startups created or scaled at NUTM, over $3m raised in venture funding by alumni entrepreneurs, and 700+ jobs created from 32 startups. Alumni ventures named in the brochures include Surepayy, MyStash, Wadi, Zankube, Shipbubble, SmartPharm, Samis, Processo, Medlivon, FoodAHub and Gamp. These are figures reported by NUTM and the media and have not been independently verified.
+
+### What is Shadow a Leader?
+keywords: shadow a leader, shadow-a-leader, internship, six-week internship, mentored by a senior leader, company project, shadow leader program
+Shadow a Leader is a six-week internship in which a student shadows a senior leader and works on a company project. For the MBA it is open to full-time students; ask admissions about other programmes. The 2024 'Shadow-A-Leader' programme partners included Microsoft, Nexford University, VFD Group, RED, CAP plc, DrugStoc, First E&P, Terragon, Verraki, Futures FT, Open Access Data Centres, HealthCap, Ventures Platform, Caverton and Norrsken22.
+
+### NUTM Scholars Program (NSP) and the TED model
+keywords: nsp, nutm scholars program, scholars program, ted, technology entrepreneurship design, flagship program, one-year program, six tracks, scholars
+The NUTM Scholars Program (NSP) was described in older announcements (classes of 2022/23 and 2023/24) as NUTM's flagship one-year, full-time interdisciplinary postgraduate programme in Technology, Entrepreneurship and Design (TED). It had six tracks: Technology; Entrepreneurship and Design; Management; Leadership; Perspectives; and Critical Thinking and Communication, with experiential components TEDLab (build a venture from scratch) and Shadow a Leader (a six-week internship mentored by a senior leader). NSP is not listed on the current NUTM programme pages, which show the MBA, MSc Software Engineering and MSc Data Science, so confirm its status with admissions.
