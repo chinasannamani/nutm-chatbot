@@ -380,8 +380,8 @@ INTENT_PATTERNS = [
     ("fee", r"\bfees?\b|cost|tuition|price|how much|charges|payment|\bpay\b|expensive|afford"),
     ("duration", r"how long|duration|length|\bmonths?\b|\byears?\b|semesters?"),
     ("curriculum", r"course|curriculum|module|subject|syllabus|what (will|do|can) i (learn|study)|taught|credits?|study plan"),
-    ("start", r"\bstart|begin|commence|intake|deadline|when (does|do|is|will)|resum"),
-    ("admission", r"\bapply|application|admission|admit|enrol|register|\bjoin\b|get in"),
+    ("start", r"\bstart(s|ed|ing)?\b|begin|commence|intake|deadline|when (does|do|is|will)|resum"),
+    ("admission", r"\bapply|application|admission|admit|enrol|\bregister\b|registration|\bjoin\b|get in"),
 ]
 INTENT_HINT = {"fee": "tuition fees", "admission": "how to apply admission", "eligibility": "entry requirements eligibility",
                "duration": "how long duration", "curriculum": "courses curriculum", "start": "start date intake"}
@@ -621,9 +621,18 @@ def answer(retriever, question, context=None):
             return text
 
     if (not results or results[0][0] < MIN_SCORE) and ctx.get("topic") and words <= 5:
-        retry = retriever.search_all(question + " " + ctx["topic"])  # short follow-up: use the earlier topic
-        if retry and retry[0][0] >= MIN_SCORE:
-            results = retry
+        # A short follow-up may lean on the earlier topic, but only if the question itself uses a word that
+        # belongs to that topic's entry. A word unrelated to NUTM ("football", "hat") must NOT bring back the
+        # previous answer.
+        known = [t for t in tokenize(question) if t in retriever.vocab]
+        topic_words = set()
+        for i, e in enumerate(retriever.entries):
+            if e["title"] == ctx["topic"]:
+                topic_words = set(retriever.vectors[i])
+        if any(t in topic_words for t in known):
+            retry = retriever.search_all(question + " " + ctx["topic"])
+            if retry and retry[0][0] >= MIN_SCORE:
+                results = retry
     if not results or results[0][0] < MIN_SCORE:
         return FALLBACK
     best_score, best = results[0]

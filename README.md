@@ -17,7 +17,7 @@ Built for the **Python for Data Science** course as a Python project.
 
 | Embedded on a mock NUTM page | Minimized |
 |---|---|
-| ![Chatbot embedded on a mock NUTM page](chatbot_ui_embedded_demo.png) | ![Minimized chat window](chatbot_ui_minimized.png) |
+| ![Chatbot embedded on a mock NUTM page](screenshots/chatbot_ui_embedded_demo.png) | ![Minimized chat window](screenshots/chatbot_ui_minimized.png) |
 
 ## What it can do
 
@@ -137,6 +137,7 @@ Run `python test_chatbot.py`. It checks:
 | Every programme x topic pair (3 postgraduate programmes, 7 undergraduate degrees, and undergraduate in general; fee, entry requirements, admission, duration, courses, start date; several phrasings each) | 195/195 |
 | Follow-up conversations ("what about data science?", "how do I apply?", "tell me more", clarifying questions) | 18/18 |
 | 34 odd inputs (empty, emoji, 1,000 characters, HTML, SQL, other languages) | no failures |
+| 32 irrelevant one-word messages (football, box, hat...) sent right after a real question, 4 different questions | never repeat the previous answer |
 | Tampered conversation context | cleaned safely |
 
 The first 47 questions were used while tuning the rules, so they flatter the result. On a separate set of 22 new questions written before the final wording fixes, the first-choice answer was right 77% of the time (91% within the top three); a later spot check of 16 more new questions found the right fact in 16 answers after two fixes. Treat roughly 80-90% as the realistic accuracy for new wording.

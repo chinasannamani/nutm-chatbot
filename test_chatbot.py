@@ -136,6 +136,8 @@ FOLLOW_UPS = [  # (conversation, text the LAST reply must contain)
     (["how long is it?"], "Which programme"),
     (["who teaches the courses"], "aculty"),
     (["is the university approved by the government"], "NUC"),
+    (["what is TEDLab", "how many startups?"], "startups"),
+    (["is it a registered university"], "NUC"),
     (["what about the MBA?"], ""),  # no earlier question: must still reply sensibly
 ]
 WEIRD = ["", "   ", "????", "\U0001F600", "1234567890", "a" * 1000, "<script>alert(1)</script>", "'; DROP TABLE x;--",
@@ -148,7 +150,24 @@ SMALL_VARIANTS = ["good mormning", "Good Afternoon!", "good evenin", "goodnight"
                   "that is all", "no", "yes", "sorry", "lol", "wow", "you are great", "who r you"]
 
 
+IRRELEVANT_WORDS = ["football", "box", "hat", "banana", "car", "rain", "music", "goat", "rice", "jollof", "movie", "shoes",
+                    "bag", "table", "chair", "dog", "cat", "ocean", "pizza", "tomato", "tiger", "guitar", "bitcoin",
+                    "Football!!", "FOOTBALL", "hat?", "president", "time", "play", "weather", "sunday", "bread"]
+
+
 def extra_checks(r):
+    # a single irrelevant word must never bring back the answer to the previous question
+    bad = []
+    for first in ["How much is the MBA?", "what is TEDLab", "how do I apply for BSc Accounting", "tell me about MSc data science"]:
+        for w in IRRELEVANT_WORDS:
+            ctx = {}
+            prev = bot.answer(r, first, ctx)
+            a = bot.answer(r, w, ctx)
+            if a == prev:
+                bad.append((first, w))
+    for first, w in bad[:8]:
+        print(f"  REPEATED PREVIOUS ANSWER after {first!r}: {w!r}")
+    print(f"Irrelevant one-word messages never repeat the last answer: {'OK' if not bad else 'FAILED (' + str(len(bad)) + ')'}")
     bad = 0
     cases = list(matrix_cases())
     for q, mark, who, topic in cases:
