@@ -17,7 +17,7 @@ Built for the **Python for Data Science** course as a Python project.
 
 | Embedded on a mock NUTM page | Minimized |
 |---|---|
-| ![Chatbot embedded on a mock NUTM page](screenshots/chatbot_ui_embedded_demo.png) | ![Minimized chat window](screenshots/chatbot_ui_minimized.png) |
+| ![Chatbot embedded on a mock NUTM page](chatbot_ui_embedded_demo.png) | ![Minimized chat window](chatbot_ui_minimized.png) |
 
 ## What it can do
 
