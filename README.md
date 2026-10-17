@@ -17,12 +17,12 @@ Built for the **Python for Data Science** course as a Python project.
 
 | Embedded on a mock NUTM page | Minimized |
 |---|---|
-| ![Chatbot embedded on a mock NUTM page](chatbot_ui_embedded_demo.png) | ![Minimized chat window](chatbot_ui_minimized.png) |
+| ![Chatbot embedded on a mock NUTM page](screenshots/chatbot_ui_embedded_demo.png) | ![Minimized chat window](screenshots/chatbot_ui_minimized.png) |
 
 ## What it can do
 
-- **Answer NUTM questions:** programmes, fees, entry requirements, admission steps, programme length, courses, start dates, scholarships, TEDLab, Shadow a Leader, contacts and more (83 knowledge entries).
-- **Give the right answer for each programme.** Ask about MSc Data Science, MSc Software Engineering, the MBA, or any undergraduate degree (Computer Science, Cybersecurity, Information Technology, Accounting, Business Administration, Entrepreneurship, Economics) and it answers for that programme. Where NUTM has not published something for a programme (for example the fee for B.Sc. Accounting), it says so and points to admissions instead of guessing.
+- **Answer NUTM questions:** programmes, fees, entry requirements, admission steps, programme length, courses, start dates, scholarships, TEDLab, Shadow a Leader, contacts and more (85 knowledge entries).
+- **Give the right answer for each programme.** Ask about MSc Data Science, MSc Software Engineering, the MBA, or any undergraduate degree (Computer Science, Cybersecurity, Information Technology, Accounting, Business Administration, Entrepreneurship, Economics) and it answers for that programme. All undergraduate programmes have the same fees (N2 million tuition and N750,000 accommodation only per academic year), and it says so for whichever degree you ask about. Where NUTM has not published a detail for a programme (for example separate subject requirements for B.Sc. Accounting), it says so and points to admissions instead of guessing.
 - **Continue a conversation.** "How much is the MBA?" then "what about data science?" then "how do I apply?" works, as does "tell me more". If a question is ambiguous ("how much is the fee?") it asks which programme you mean.
 - **Chat politely.** It replies to greetings (even with spelling mistakes, such as "good mormning"), good afternoon/evening/night, okay, well done, thanks, goodbye, "who are you?", "help" and similar.
 - **Stay honest.** Questions it cannot answer (weather, football and so on) get a friendly reply with NUTM's contact details instead of a made-up answer.
@@ -37,7 +37,7 @@ Example questions:
 
 ## How it works
 
-1. **Knowledge base:** `nutm_knowledge_base.txt` holds 83 short entries written from the NUTM website (including TEDLab, Shadow a Leader and the Scholars Program), the MSc Data Science, MSc Software Engineering and MBA brochures, and the undergraduate FAQ.
+1. **Knowledge base:** `nutm_knowledge_base.txt` holds 85 short entries written from the NUTM website (including TEDLab, Shadow a Leader and the Scholars Program), the MSc Data Science, MSc Software Engineering and MBA brochures, and the undergraduate FAQ.
 2. **Programme router:** the question is checked for a programme (for example "BSc Accounting") and a topic (fee, admission, entry requirements, duration, courses, start date). When both are found, the exact answer for that programme is returned.
 3. **Retrieval:** otherwise each entry and each question is turned into a TF-IDF word vector (with simple stemming, synonyms, spelling-mistake correction and programme detection). The entry with the highest cosine similarity is returned. Off-topic questions are detected and answered with the safe fallback.
 4. **Conversation memory:** after each answer the server sends back a small "context" (the programme and topic just discussed). The chat window stores it in the browser tab's session storage and sends it with the next question, so the server keeps no conversation history. Refreshing the page or moving to another page of the site continues the same chat; closing the tab ends it. The **New chat** button (the circular arrow) starts again.
@@ -152,7 +152,7 @@ Built in:
 - HTML pages are sent with a Content-Security-Policy, `X-Frame-Options` and `Referrer-Policy`; HTTPS responses add `Strict-Transport-Security`. The server does not reveal its Python version.
 - Visitors' questions are never saved or logged by the server; log lines have control characters removed. `/health` is available for hosting health checks.
 - The conversation is kept only in the visitor's own browser tab (session storage). The context the browser sends back is validated against known values.
-- The chat window sends no cookies, and is keyboard- and screen-reader-friendly (labelled input, live message region, Escape closes the window).
+- The chat window sends no cookies and is keyboard- and screen-reader-friendly (labelled input, live message region, Escape closes the window).
 
 Settings you should make when you host it:
 
@@ -181,7 +181,7 @@ Whoever controls your GitHub or hosting account controls what the chatbot tells 
 - Memory is basic: it remembers the programme and topic of the last questions, not a long conversation.
 - It cannot answer general-knowledge questions (weather, sport and so on); it says so and shares NUTM's contacts.
 - The knowledge base is updated by hand. Several NUTM details (such as the September 2026 start dates) may already be out of date.
-- Where NUTM has not published a detail for a programme (for example some undergraduate fees), the bot says so rather than guessing.
+- Where NUTM has not published a detail for a programme (for example per-programme details beyond the general entry requirements), the bot says so rather than guessing.
 - English only.
 - The free hosting plan sleeps after about 15 minutes of inactivity.
 

@@ -376,7 +376,7 @@ PROG_PATTERNS = [
 ]
 UG_WORDS = r"undergrad|\bbsc\b|b\.? ?sc\b|jamb|utme|\bug\b"
 INTENT_PATTERNS = [
-    ("eligibility", r"eligib|requirement|qualif|\bentry\b|prerequisite|criteria|cut ?off|jamb score|utme score|what do i need|need to (study|apply|get in|join)|who can (apply|study|join)"),
+    ("eligibility", r"eligib|requirement|qualif|\bentry\b|prerequisite|criteria|cut ?off|jamb score|utme score|what do i need|need to (study|apply|get in|join)|who can (apply|study|join)|physics|o.?level subjects?"),
     ("fee", r"\bfees?\b|cost|tuition|price|how much|charges|payment|\bpay\b|expensive|afford"),
     ("duration", r"how long|duration|length|\bmonths?\b|\byears?\b|semesters?"),
     ("curriculum", r"course|curriculum|module|subject|syllabus|what (will|do|can) i (learn|study)|taught|credits?|study plan"),
@@ -462,20 +462,20 @@ def route(retriever, prog, intent):
             return None
         if not degree:
             return e["body"], e
-        return (f"For {label}, NUTM's published undergraduate entry requirements are:\n{e['body']}\n\n"
-                f"NUTM states these for its undergraduate programmes in general; please confirm any extra "
-                f"requirement for {label} with admissions@nutm.edu.ng."), e
+        group = entry("Computing degrees, O'Level") if computing else entry("Business and economics degrees, O'Level")
+        if not group:
+            return None
+        return (f"{group['body']}\n\nPlease confirm any further subject requirement for {label} with "
+                f"admissions@nutm.edu.ng."), group
     if intent == "fee":
         e = entry("Tuition and accommodation fees")
         if not e:
             return None
-        if computing or not degree:
-            return ((f"{label}: " if degree else "") + e["body"]), e
-        return (f"NUTM's published undergraduate fees (tuition of N2 million per academic year and N750,000 per academic "
-                f"year for accommodation only) are for B.Sc. Computer Science, Cybersecurity and Information Technology. "
-                f"I could not find a published fee for {label}, so please confirm it with admissions@nutm.edu.ng. "
-                f"A non-refundable acceptance fee of N250,000 is due when you accept an offer, and there is no "
-                f"application fee."), e
+        if degree:
+            return (f"{label} has the same fees as every NUTM undergraduate programme: tuition is N2 million per academic "
+                    f"year, and accommodation only is N750,000 per academic year. Fees cover tuition and accommodation "
+                    f"only. Students buy their own course materials, meals, and travel; allowances are not provided."), e
+        return e["body"], e
     if intent == "admission":
         e = entry("How do I apply for an undergraduate")
         if not e:
@@ -487,11 +487,10 @@ def route(retriever, prog, intent):
         e = entry("Programme length")
         if not e:
             return None
-        if computing or not degree:
-            return ((f"{label}: " if degree else "") + e["body"]), e
-        return (f"The programme length NUTM publishes is four academic sessions (eight consecutive semesters) for its "
-                f"computing programmes entering through UTME. I could not find a published duration for {label}; "
-                f"please confirm it with admissions@nutm.edu.ng."), e
+        if degree:
+            return (f"{label} runs for a minimum of four (4) academic sessions, or eight (8) consecutive semesters, "
+                    f"for candidates who enter through UTME. All NUTM undergraduate programmes have the same length."), e
+        return e["body"], e
     if intent == "curriculum":
         e = entry(label) if degree else entry("Undergraduate programmes: list")
         if not e:

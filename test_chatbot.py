@@ -36,7 +36,7 @@ IN_SCOPE = [
     ("what undergraduate programmes are offered", "Undergraduate programmes: list"),
     ("tell me about cybersecurity degree", "Cybersecurity"),
     ("executive education courses", "Executive Education"),
-    ("does NUTM have hostels", "accommodation"),
+    ("does NUTM have hostels", "off-campus living"),
     ("what is the minimum JAMB score", "Entry requirements for undergraduate"),
     ("is there an application fee", "application fee"),
     ("how long is the undergraduate degree", "Programme length"),
@@ -105,8 +105,8 @@ def matrix_cases():
                 for tpl in TEMPLATES[topic]:
                     yield tpl.format(p=n), mark, label, topic
     for n, (computing, desc) in UG_DEGREES.items():
-        marks = {"fee": "N2 million" if computing else "confirm it with admissions", "eligibility": "180",
-                 "admission": "university-degree-programs", "duration": "four" if computing else "confirm it with admissions",
+        marks = {"fee": "N2 million", "eligibility": "180",
+                 "admission": "university-degree-programs", "duration": "four",
                  "curriculum": desc, "start": "rolling basis"}
         for topic, mark in marks.items():
             for tpl in TEMPLATES[topic]:

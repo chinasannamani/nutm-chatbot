@@ -1,4 +1,4 @@
-# NUTM KNOWLEDGE BASE  (last updated 15 October 2026)
+# NUTM KNOWLEDGE BASE  (last updated 17 October 2026)
 # Sources: nutm.edu.ng pages (home, about-us, academics, undergraduate, postgraduate, MSc Data Science,
 # MSc Software Engineering, MBA, executive education, career) scraped 13 October 2026;
 # NUTM Undergraduate FAQ; MSc Data Science, MSc Software Engineering and 2026 MBA brochures.
@@ -188,7 +188,7 @@ The most recent intake listed on NUTM's website starts in September 2026 (applic
 
 ### Undergraduate programmes: list of B.Sc. degrees
 keywords: undergraduate, bachelor, b.sc, degree programs, courses, what can i study, ug, first degree, available undergraduate degree programs, what undergraduate programmes are offered, undergraduate degrees available, bsc courses offered
-NUTM undergraduate degrees (Faculty of Computing & Science and business programmes): B.Sc. Computer Science, B.Sc. Cybersecurity, B.Sc. Information Technology, B.Sc. Accounting, B.Sc. Business Administration, B.Sc. Entrepreneurship, B.Sc. Economics. Apply for the 2026 intake via the NUTM website (nutm.edu.ng/undergrad).
+NUTM undergraduate degrees (Faculty of Computing & Science and business programmes): B.Sc. Computer Science, B.Sc. Cybersecurity, B.Sc. Information Technology, B.Sc. Accounting, B.Sc. Business Administration, B.Sc. Entrepreneurship, B.Sc. Economics. Apply for the 2026 intake via the NUTM website (nutm.edu.ng/undergrad). All undergraduate programmes have the same fees: tuition of N2 million and accommodation only of N750,000 per academic year.
 
 ### B.Sc. Computer Science
 keywords: computer science, cs, undergraduate computer science, programming
@@ -228,7 +228,18 @@ Yes, NUTM is accredited by the National Universities Commission (NUC). Yes, NUTM
 
 ### Undergraduate FAQ: Entry requirements for undergraduate programmes
 keywords: undergraduate, entry requirements, requirements, utme, jamb score, o level, credits, waec, neco, cut off, cutoff, 180, physics, mathematics, english, minimum jamb score, jamb cut off, jamb cutoff, how many points, utme score, what score do i need, required subjects
-Applicants should have scored 180 and above in UTME (conducted by JAMB) and completed secondary education with a minimum of five (5) O'Level or equivalent credits in English, Mathematics and Physics, in one sitting.
+Applicants should have scored 180 and above in UTME (conducted by JAMB) and completed secondary education with a minimum of five (5) O'Level or equivalent credits, in one sitting. The required subjects depend on the programme.
+Computing programmes (B.Sc. Computer Science, Cybersecurity, Information Technology): credits in English, Mathematics and Physics.
+Business and economics programmes (B.Sc. Accounting, Business Administration, Entrepreneurship, Economics): credits in English and Mathematics.
+Please confirm any further subject requirement for your programme with admissions@nutm.edu.ng.
+
+### Undergraduate FAQ: Computing degrees, O'Level subjects needed
+keywords: computer science, cybersecurity, information technology, computing, physics
+For B.Sc. Computer Science, Cybersecurity and Information Technology, applicants should have scored 180 and above in UTME (conducted by JAMB) and completed secondary education with a minimum of five (5) O'Level or equivalent credits in English, Mathematics and Physics, in one sitting.
+
+### Undergraduate FAQ: Business and economics degrees, O'Level subjects needed
+keywords: accounting, business administration, business, entrepreneurship, economics
+For B.Sc. Accounting, Business Administration, Entrepreneurship and Economics, applicants should have scored 180 and above in UTME (conducted by JAMB) and completed secondary education with a minimum of five (5) O'Level or equivalent credits including English and Mathematics, in one sitting.
 
 ### Undergraduate FAQ: Can I apply if I already have a Master's or doctoral degree?
 keywords: undergraduate, second degree, master's holder, phd holder, another degree
@@ -266,9 +277,9 @@ The application essay must be a minimum of 300 words. There is no right or wrong
 keywords: reapply, apply again, defer, deferment, postpone, gap year, rejected
 You can reapply but not within the same academic year; you must submit a fresh application the following year. Offered applicants currently cannot defer admission; they must reapply at the desired time.
 
-### Undergraduate FAQ: Tuition and accommodation fees (Computer Science, Cybersecurity, IT)
-keywords: undergraduate, fee, fees, tuition, cost, price, how much, accommodation, hostel, naira, 2m, 750k, school fees, b.sc computer science fee
-For B.Sc. Computer Science, B.Sc. Cybersecurity and B.Sc. Information Technology: tuition is N2 million per academic year; accommodation only is N750,000 per academic year. Fees cover tuition and accommodation only. Students buy their own course materials, meals, and travel; allowances are not provided.
+### Undergraduate FAQ: Tuition and accommodation fees (all undergraduate programmes)
+keywords: undergraduate, fee, fees, tuition, cost, price, how much, accommodation, hostel, naira, 2m, 750k, school fees, b.sc computer science fee, same fees, all programmes same fee, fee for accounting, fee for economics, fee for business administration, fee for entrepreneurship, fee for computer science, fee for cybersecurity, fee for information technology, bsc fees, undergraduate fees, how much per year, per academic year
+All NUTM undergraduate programmes have the same fees: tuition is N2 million per academic year, and accommodation only is N750,000 per academic year. This applies to B.Sc. Computer Science, Cybersecurity, Information Technology, Accounting, Business Administration, Entrepreneurship and Economics. Fees cover tuition and accommodation only. Students buy their own course materials, meals, and travel; allowances are not provided.
 
 ### Undergraduate FAQ: When do I pay? Acceptance fee? Instalments? Per semester?
 keywords: acceptance fee, instalment, installment, pay in parts, semester payment, annual payment, due date, 250000, non-refundable, payment plan
@@ -300,15 +311,15 @@ Students pay for their own meals; a refectory is available on campus. Meals, tra
 
 ### Undergraduate FAQ: Campus location and off-campus living
 keywords: campus, location, where, hostel, accommodation, off-campus, live outside, own apartment, residence
-The campus is at 6 Freetown Road, Apapa, Lagos. You can live in your own off-campus apartment but must promptly attend all academic and mandatory extracurricular activities.
+The campus is at 6 Freetown Road, Apapa, Lagos. You can live in your own off-campus apartment but must promptly attend all academic and mandatory extracurricular activities. On-campus accommodation (accommodation only) costs N750,000 per academic year, the same for every undergraduate programme.
 
 ### Undergraduate FAQ: Transfers and direct entry
 keywords: transfer, direct entry, de, from another university, 200 level, change university, level
-You can transfer to NUTM from another university, but not into 100 Level. NUTM began offering undergraduate programmes in 2023, and transfers into other levels began in 2024. Direct entry is available, but not into 100 Level.
+You can transfer to NUTM from another university, but not into 100 Level; transfers are into the higher levels only. Direct entry is available, but not into 100 Level. Contact admissions@nutm.edu.ng to confirm which levels are open for your programme.
 
 ### Undergraduate FAQ: Programme length
 keywords: duration, how long, years, four years, eight semesters, length of degree, undergraduate
-The minimum duration of the computing programmes (B.Sc. Computer Science, Cybersecurity, Information Technology) is four (4) academic sessions, or eight (8) consecutive semesters, for candidates who enter through UTME.
+Every NUTM undergraduate programme (B.Sc. Computer Science, Cybersecurity, Information Technology, Accounting, Business Administration, Entrepreneurship and Economics) runs for a minimum of four (4) academic sessions, or eight (8) consecutive semesters, for candidates who enter through UTME.
 
 ### Undergraduate FAQ: SIWES industrial training
 keywords: siwes, industrial training, internship, work experience, industrial work experience
